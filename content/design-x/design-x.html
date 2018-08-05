@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/main.css">
+    <title>Arthur Kim Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="container">
+
+        <header>
+
+            <nav>
+                <h1>
+                    <span id="homenav">
+                        <a href="../../index.html">Arthur Kim is a designer</a>
+                    </span>
+                </h1>
+                <span id="button"></span>
+            </nav>
+        <br clear="all" />
+            <div class="hidden">
+                <div id="hiddenLeft" class="hiddenModule">
+                    <p>Arthur Kim is a student at <a href="https://www.risd.edu">RISD</a> 
+                        graduating in June 2019. You can find his <a href="">resume</a> 
+                        here. He previously worked at <a href="https://www.sypartners.com/">SYPartners</a> 
+                        and worked business development and strategy with Nike, Virgin Voyages, and Uniqlo. 
+                    <br /><br /> He also worked for a smaller textile firm in 
+                    South Korea as a design intern and later worked for them as a graphic designer. 
+                    </p>
+                </div>
+
+                <div id="hiddenMiddle" class="hiddenModule">
+                    <p>He enjoys challenges, solving interesting and weird problems, 
+                        and knows how to thread eyebrows. 😮 He's not that great at writing 
+                        about himself in third person so you can find more about him here — 
+                        stalk him <a href="https://www.instagram.com/arthursdayy/">instagram</a> 
+                        or connect with him on <a href="https://www.linkedin.com/in/arthur-kim/">linkedIn</a>.
+                    <br /><br /> Or drop a hello email.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <br clear="all" />
+        <!-- <ul class="project container">
+            <li class="unit">
+                <a href="content/sad-emoji/sad-emoji.html" class="showcase-link">
+                    <img src="content/sad-emoji/thumbnail-04.jpg" alt="" class="showcase-image border">
+                      <div class="showcase-caption">
+                          <h3 class="showcase-title"></h3>
+                      </div>
+                </a>
+            </li>
+
+            <li class="unit">
+                <a href="" class="showcase-link">
+                    <img src="content/ibm/thumbnail-02.jpg" alt="" class="showcase-image border">
+                        <div class="showcase-caption">
+                            <h3 class="showcase-title"></h3>
+                        </div>
+                </a>
+            </li>
+
+            <li class="unit big">
+                <a href="" class="showcase-link">
+                    <img src="content/design-x/thumbnail-03.jpg" alt="" class="showcase-image border">
+                        <div class="showcase-caption">
+                            <h3 class="showcase-caption"></h3>
+                        </div>
+                </a>
+            </li>
+
+            <li class="unit">
+                <a href="" class"showcase-link">
+                    <img src="content/airware/thumbnail-01.jpg" alt="" class="showcase-image border">
+                        <div class="showcase-caption">
+                            <h3 class="showcase-caption"></h3>
+                        </div>
+                </a>
+            </li>
+            <li class="unit">
+            </li>
+            <li class="unit">
+            </li>
+            <li class="unit">
+            </li>
+            <li class="unit">
+            </li>
+        </ul> -->
+    </div>
+</body>
+</html>
+
+<script src="../../assets/js/lottie.js"></script>
+<script> 
+$(document).ready(function() {
+
+var animation = lottie.loadAnimation({
+        container: document.getElementById('button'),
+        renderer: 'svg',
+        autoplay: false,
+        loop: false,
+        path: 'assets/js/data.json'
+    });
+
+
+$('#button').click(function() {
+        $('.hidden').toggleClass('showHidden');
+        animation.play();
+        
+        if ($('.hidden').hasClass('showHidden')){
+            lottie.setDirection(1);
+            console.log(animation.currentRawFrame)
+        }
+        else{
+            lottie.setDirection(-1);
+            console.log(animation.currentRawFrame)
+        }
+    });
+});
+</script>
+<!-- <script src="assets/js/script.js"></script> -->
