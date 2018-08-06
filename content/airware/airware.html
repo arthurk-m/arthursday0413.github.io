@@ -44,82 +44,61 @@
                 </div>
             </div>
         </header>
+<!--put in your project details here-->
+<br clear="all" />
+<ul class="project container">
+    
+    <li class="unit big">
+        <!-- <object data="airware.pdf" type="application/pdf">
+            <embed src="airware.pdf" type="application/pdf">
+                <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+            </embed>
+        </object> -->
+        <img src="thumbnail-01.jpg"  class="border"/>
+    </li>
 
-        <br clear="all" />
-        <!-- <ul class="project container">
-            <li class="unit">
-                <a href="content/sad-emoji/sad-emoji.html" class="showcase-link">
-                    <img src="content/sad-emoji/thumbnail-04.jpg" alt="" class="showcase-image border">
-                      <div class="showcase-caption">
-                          <h3 class="showcase-title"></h3>
-                      </div>
-                </a>
-            </li>
+    <li class="unit description">
+            <h1>Airware Redesign</h1>
+            <br /> <br />
+            <div class="sub-description">
+                <h3>Redesign / UI/UX</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit. Vestibulum sollicitudin tellus non augue sodales 
+                    aliquet. Aliquam consequat suscipit diam eget sagittis. 
+                    In mi ante, cursus sed convallis a, rhoncus eu </p>
+            </div>        
+    </li>
 
-            <li class="unit">
-                <a href="" class="showcase-link">
-                    <img src="content/ibm/thumbnail-02.jpg" alt="" class="showcase-image border">
-                        <div class="showcase-caption">
-                            <h3 class="showcase-title"></h3>
-                        </div>
-                </a>
-            </li>
-
-            <li class="unit big">
-                <a href="" class="showcase-link">
-                    <img src="content/design-x/thumbnail-03.jpg" alt="" class="showcase-image border">
-                        <div class="showcase-caption">
-                            <h3 class="showcase-caption"></h3>
-                        </div>
-                </a>
-            </li>
-
-            <li class="unit">
-                <a href="" class"showcase-link">
-                    <img src="content/airware/thumbnail-01.jpg" alt="" class="showcase-image border">
-                        <div class="showcase-caption">
-                            <h3 class="showcase-caption"></h3>
-                        </div>
-                </a>
-            </li>
-            <li class="unit">
-            </li>
-            <li class="unit">
-            </li>
-            <li class="unit">
-            </li>
-            <li class="unit">
-            </li>
-        </ul> -->
-    </div>
+</ul>
+</div>
 </body>
 </html>
 
 <script src="../../assets/js/lottie.js"></script>
 <script> 
 $(document).ready(function() {
-    var animation = lottie.loadAnimation({
-        container: document.getElementById('button'),
-        renderer: 'svg',
-        autoplay: false,
-        loop: false,
-        path: '../../assets/js/data.json'
-    });
+var animation = lottie.loadAnimation({
+container: document.getElementById('button'),
+renderer: 'svg',
+autoplay: false,
+loop: false,
+path: '../../assets/js/data.json'
+});
 
-    
-    $('#button').click(function() {
-        $('.hidden').toggleClass('showHidden');
-        animation.play();
-        
-        if ($('.hidden').hasClass('showHidden')){
-            lottie.setDirection(1);
-            console.log(animation.currentRawFrame)
-        }
-        else{
-            lottie.setDirection(-1);
-            console.log(animation.currentRawFrame)
-        }
-    });
+
+$('#button').click(function() {
+$('.hidden').toggleClass('showHidden');
+animation.play();
+
+if ($('.hidden').hasClass('showHidden')){
+    lottie.setDirection(1);
+    console.log(animation.currentRawFrame)
+}
+else{
+    lottie.setDirection(-1);
+    console.log(animation.currentRawFrame)
+}
+});
 });
 </script>
-<!-- <script src="assets/js/script.js"></script> -->
+<!-- <script src="../../assets/js/script.js"></script> -->
