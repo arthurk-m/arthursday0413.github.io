@@ -265,8 +265,25 @@ nav {
     transition: all 0.4s;
     /*cursor: none;*/
   }
+  .scroll {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 200;
+    box-shadow: 2px 2px 5px white;
+    -moz-box-shadow: 2px 2px 5px white;
+    -webkit-box-shadow: 2px 2px 5px white;
+    -o-box-shadow: 2px 2px 5px white;
+    border-radius: 100px;
+  }
 }
 @media all and (max-width: 640px) {
+  .scroll {
+    display: none;
+  }
   /*SMALL SCREENS*/
   /*SMALL SCREENS*/
   /*SMALL SCREENS*/
@@ -327,5 +344,8 @@ transform: translateY(-50%);*/
     -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.4s;
+  }
+  .scroll {
+    visibility: hidden;
   }
 }

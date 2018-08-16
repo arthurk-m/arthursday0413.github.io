@@ -28,6 +28,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     windowWidth = $(window).width();
   });
 
+  // scroll
+  $(window).scroll(function(event){
+    scrollingText = $('.scroll img');
+    st = $(this).scrollTop();
+    scrollspeed = st / 5;
+    scrollingText.css({ 
+        '-webkit-transform':'rotate('+scrollspeed+'deg)',
+        '-moz-transform':'rotate('+scrollspeed+'deg)',
+        '-ms-transform':'rotate('+scrollspeed+'deg)',
+        'transform':'rotate('+scrollspeed+'deg)'
+    })
+});
+
   //this bit shows the name of project on hover
   $(".showcase-image").hover(
     function(event) {
@@ -61,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     }
   );
+
 
   // $("#target").mousemove(function(event) {
   //     var msg = "Handler for .mousemove() called at ";

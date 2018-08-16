@@ -14,7 +14,7 @@ $(document).ready(function() {
       <p>Arthur Kim is a student at
           <a href="https://www.risd.edu" target="_blank">RISD</a>
           graduating in June 2019. You can find his
-          <a href="${resumeLink}" target="_blank">❒ resume</a>
+          <a href="${resumeLink}" target="_blank">✸ resume</a>
           here. He previously worked at
           <a href="https://www.sypartners.com/" target="_blank">SYPartners</a>
           and worked business development and strategy with Nike, Virgin Voyages ️⚓, and Uniqlo.
@@ -32,7 +32,7 @@ $(document).ready(function() {
           or connect with him on
           <a href="https://www.linkedin.com/in/arthur-kim/" target="_blank"> ⚡︎ linkedIn</a>.
           <br />
-          <br /> Or drop a hello email.
+          <br /> Or drop a hello email @ akim15@risd.edu.
       </p>
   </div>
 </div>`;
