@@ -55,13 +55,6 @@ html {
   /* Highlight color for WebKit-bases touch devices. */
   -webkit-tap-highlight-color: rgba(113, 239, 172, 0.5);
 }
-@media all and (max-width: 30em) {
-  html {
-    /* We decrease the font-size a little-bit for tiny
-       screens. Because this stylesheet uses relative units
-       everywhere, everything scales nicely. */
-  }
-}
 #container {
   padding: 10px;
 }
@@ -77,6 +70,7 @@ a:visited {
   width: 33.3%;
   padding: 20px;
   list-style: none;
+  display: block;
 }
 .unit img {
   width: 100%;
@@ -86,6 +80,25 @@ a:visited {
 }
 .big {
   width: 66.6%;
+}
+.small {
+  width: 16.6%;
+}
+.half {
+  width: 50%;
+}
+.videoContainer {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.videoResp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 .project {
   margin: 0;
@@ -166,7 +179,7 @@ nav {
 .description {
   width: 33.3%;
   height: auto;
-  float: right;
+  float: left;
 }
 .description h1 {
   font-family: "Ogg", Ogg, serif;
@@ -296,6 +309,8 @@ nav {
   .unit,
   .unit-project,
   .big,
+  .small,
+  .half,
   .biggest,
   .bigright,
   .bigleft,

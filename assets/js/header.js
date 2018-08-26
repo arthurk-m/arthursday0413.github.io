@@ -29,15 +29,17 @@ $(document).ready(function() {
           not that great at writing about himself in third person so you can find more about him here — stalk
           his
           <a href="https://www.instagram.com/arthursdayy/" target="_blank"> 📷 instagram</a>
-          or connect with him on
-          <a href="https://www.linkedin.com/in/arthur-kim/" target="_blank"> ⚡︎ linkedIn</a>.
+          or connect with him on 
+          <a href="https://www.linkedin.com/in/arthur-kim/" target="_blank">linkedIn</a>.
           <br />
           <br /> Or drop a hello email @ akim15@risd.edu.
       </p>
   </div>
 </div>`;
 
-  const animationPath = $("#indexHeader").length? 'assets/js/data.json' : '../../assets/js/data.json';
+  const animationPath = $("#indexHeader").length
+    ? "assets/js/data.json"
+    : "../../assets/js/data.json";
   $("#indexHeader").html(headerTemplate("index.html", "ArthurKim_Resume.pdf"));
   $("#projectHeader").html(
     headerTemplate("../../index.html", "../../ArthurKim_Resume.pdf")
