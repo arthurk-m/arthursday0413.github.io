@@ -1,132 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <title>Arthur Kim Website</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/header.js"></script>
-    <link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
-</head>
-
-<body>
-
-    <!-- <div class="scroll">
-        <img src="content/circle.svg" />
-    </div> -->
+    <title>Arthur Kim Design</title>
+  </head>
+  <body>
     <div class="showcase-caption-hover">
-        <h3 class="showcase-title-hover"></h3>
+      <h3 class="showcase-title-hover"></h3>
     </div>
-    <div id="container">
+    <div class="websiteContainer">
+      <!-- <header> -->
+      <div id="header">
+        <div class="unit" id="introduction">
+          <h1>
+            Hi I'm, <br />
+            <a href="aboutMe.html">
+            <u>Arthur Kim</u></a>,<br />Designer & <br />
+            Human.
+          </h1>
+        </div>
+        <div class="unit" id="introContainer">
+          <div class="subtitle"><h2>Who is he?</h2></div>
+          <div class="paragraph">
+            <p>
+              I currently attend the Rhode Island School of Design graduating this upcoming June.
+              I am looking for things to do post-grad. Take a look at my
+              work and let me know what you think! Coded by me and hosted by github. Sorry for any
+              bugs still working on fixing somethings 😓.
+            </p>
+            <p>
+              Check out my <a href="ArthurKim_Resume.pdf" target="_blank"><u>resume</u></a> here.
+            </p>
+          </div>
+        </div>
+        <!-- <div id="pacman"></div>
+      </div> -->
+      <!-- </header> -->
 
-        <header id="indexHeader">
-        </header>
+      <ul class="project container">
+        <li class="unit" style="clear:left">
+          <a href="content/goal_app/goal.html" class="showcase-link">
+            <!-- this makes a link to the project page -->
+            <img
+              src="content/goal_app/thumbnail-goal.gif"
+              alt=""
+              class="showcase-image"
+            />
+            <div class="showcase-caption">
+              <p style="margin:0;" class="showcase-title">Grit and Goal App</p>
+            </div>
+          </a>
+        </li>
 
-        <br clear="all" />
-        <ul class="project container">
+        <li class="unit">
+          <a href="content/airware/airware.html" class="showcase-link">
+            <img
+              src="content/airware/airware-thumbnail.gif"
+              alt=""
+              class="showcase-image"
+            />
+            <div class="showcase-caption">
+              <p style="margin:0;" class="showcase-title">Airware Redesign</p>
+            </div>
+          </a>
+        </li>
 
-            <li class="unit big">
-                <a href="content/sad-emoji/sad-emoji.html" class="showcase-link">
-                    <!-- this makes a link to the project page -->
-                    <img src="content/sad-emoji/thumbnail-04.svg" alt="" class="showcase-image border" />
-                    <div class="showcase-caption">
-                        <h3 class="showcase-title">The Sad Emoji</h3>
-                    </div>
-                </a>
-            </li>
+        <li class="unit" style="clear:left">
+          <a href="content/sad-emoji/sad-emoji.html" class="showcase-link">
+            <img
+              src="content/sad-emoji/thumbnail_sademoji.svg"
+              alt=""
+              class="showcase-image"
+            />
+            <div class="showcase-caption">
+              <p style="margin:0;" class="showcase-title">The Sad Emoji</p>
+            </div>
+          </a>
+        </li>
 
-            <li class="unit">
-                <a href="content/syp-vv/virginvoyages.html" class="showcase-link">
-                    <img src="content/syp-vv/VGV_stickers.jpg" alt="" class="showcase-image">
-                    <div class="showcase-caption">
-                        <h3 class="showcase-title">Virgin Voyages</h3>
-                    </div>
-                </a>
-            </li>
+        <li class="unit">
+          <a href="content/poster-work/poster.html" class="showcase-link">
+            <img
+              src="content/poster-work/poster_thumbnail.svg"
+              alt=""
+              class="showcase-image"
+            />
+            <div class="showcase-caption">
+              <p style="margin:0;" class="showcase-title">Poster Work</p>
+            </div>
+          </a>
+        </li>
 
-            <li class="unit">
-                <a href="content/KBF/kbf.html" class="showcase-link">
-                    <img src="content/KBF/KBF-Book.jpg" alt="" class="showcase-image">
-                    <div class="showcase-caption">
-                        <h3 class="showcase-title">Korea Bojagi Forum</h3>
-                    </div>
-                </a>
-            </li>
-
-            <li class="unit">
-                <a href="content/projectLets/projectLets.html" class="showcase-link">
-                    <img src="content/projectLets/lets-thumbnail.svg" alt="" class="showcase-image border">
-                    <div class="showcase-caption">
-                        <h3 class="showcase-title">Project Lets Branding</h3>
-                    </div>
-                </a>
-            </li>
-
-            <li class="unit big" style="float: right;">
-                <a href="content/design-x/design-x.html" class="showcase-link">
-                    <div class="showcase-image border" id="design-xAnimation"></div>
-                    <!-- <img src="content/design-x/thumbnail-03.jpg" alt="" class="showcase-image border"> -->
-                    <div class="showcase-caption">
-                        <h3 class="showcase-title">Millenial Minimalism</h3>
-                    </div>
-                </a>
-            </li>
-
-            <li class="big unit">
-                <a href="content/airware/airware.html" class="showcase-link">
-                    <img src="content/airware/thumbnail-airware.svg" alt="" class="showcase-image">
-                    <div class="showcase-caption">
-                        <h3 class="showcase-title">Airware Redesign</h3>
-                    </div>
-                </a>
-            </li>
-
-            <li class="unit" style="float:left;">
-                <a href="content/moving-poetry/poetry.html" class="showcase-link">
-                    <img src="content/moving-poetry/Forsythia.gif" alt="" class="showcase-image">
-                    <div class="showcase-caption">
-                        <h3 class="showcase-title">Concrete Poetry</h3>
-                    </div>
-                </a>
-            </li>
-
-            <li class="big unit">
-                <a href="content/ibm/ibm.html" class="showcase-link">
-                    <img src="content/ibm/thumbnail-ibm.svg" alt="" class="showcase-image border">
-                    <div class="showcase-caption">
-                        <h3 class="showcase-title">IBM Wintersession</h3>
-                    </div>
-                </a>
-            </li>
-
-            <li class="unit">
-                <a href="content/poster-work/poster.html" class="showcase-link">
-                    <img src="content/poster-work/thumbnail-06.svg" alt="" class="showcase-image">
-                    <div class="showcase-caption">
-                        <h3 class="showcase-title">Posters</h3>
-                    </div>
-                </a>
-            </li>
-
-            <li class="unit big">
-                <a href= "content/crystal-goblet/crystalgoblet.html" class="showcase-link">
-                    <img src="content/crystal-goblet/thumbnail-cry.png" alt="" class="showcase-image">
-                    <div class="showcase-caption">
-                        <h3 class="showcase-title">Crystal Goblet</h3>
-                    </div>
-                </a>
-            </li>
-
-        </ul>
+        <li class="unit">
+          <a href="content/syp-vv/virginvoyages.html" class="showcase-link">
+            <img
+              src="content/syp-vv/syp-thumbnail-03.svg"
+              alt=""
+              class="showcase-image"
+            />
+            <div class="showcase-caption">
+              <p style="margin:0;" class="showcase-title">SYPartners Internship</p>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
-</body>
-
+    
+  </body>
 </html>
 
 <script src="assets/js/lottie.js"></script>
-<script src="assets/js/design-x.js"></script>
+<script src="assets/js/pacman.js"></script>
 <script src="assets/js/script.js"></script>

@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           $(".showcase-caption-hover").css({
             // "position":"fixed",
             opacity: "1",
-            left: x - 18,
+            left: x - 20,
             top: y - 20
           });
         });
