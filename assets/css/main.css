@@ -119,9 +119,10 @@ header:after {
 
 .websiteContainer {
   margin-top: 10vh;
-  margin-left: 16vw;
-  margin-right: 16vw;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10vh;
+  max-width: 800px;
 }
 
 .work, .home {
