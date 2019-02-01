@@ -21,6 +21,12 @@ h1 {
   margin: 0;
 }
 
+@media screen and (min-width: 1350px) {
+  h1 {
+     font-size: 67.5px;
+  }
+}
+
 h2 {
   font-weight: bold;
   line-height: 100%;
